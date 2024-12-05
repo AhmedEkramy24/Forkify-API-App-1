@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API App</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <!-- loading -->
+    <div
+      id="load"
+      class="loading position-fixed top-0 start-0 end-0 bottom-0 bg-black bg-opacity-50 d-none justify-content-center align-items-center"
+    >
+      <span class="loader d-block"></span>
+    </div>
+
+    <!-- App -->
+    <div class="container">
+      <div class="w-50 mx-auto my-3 d-flex">
+        <input type="search" class="form-control w-100" id="searchInp" />
+        <button class="btn btn-primary ms-1" id="searchBtn">search</button>
+      </div>
+
+      <div class="alert alert-danger d-none" id="alert" role="alert">
+        invalid data please write the data correct
+      </div>
+
+      <div class="row g-4 mt-2" id="dataRow"></div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="detailes"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">recipe</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="modal"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
